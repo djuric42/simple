@@ -1,0 +1,31 @@
+.ConsumptionRegions h2 {
+	font-size: 1.2em;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid currentColor;
+	font-weight: bold;
+}
+
+.ConsumptionRegions .regions {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+}
+
+.ConsumptionRegions-Region table {
+	text-align: left;
+	width: 100%;
+}
+
+.ConsumptionRegions-Region table td,
+.ConsumptionRegions-Region table th {
+	padding: 2px;
+}
+
+.ConsumptionRegions-Region thead th {
+	font-weight: bold;
+}
+
+.ConsumptionRegions-Region tbody td {
+	font-weight: bold;
+}

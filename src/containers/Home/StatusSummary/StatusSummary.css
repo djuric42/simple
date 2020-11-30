@@ -1,0 +1,40 @@
+.StatusSummary {
+	padding: 20px;
+	color: var(--color-blue-dark);
+}
+.StatusSummary .inner {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.StatusSummary h1 {
+	font-size: 2.3em;
+}
+
+.StatusSummary .header {
+	margin: 50px 0 50px 0;
+}
+
+.StatusSummary .header p {
+	font-size: 1.3em;
+	margin: 10px 0 0 0;
+}
+
+.StatusSummary .content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: minmax(400px, 4fr) minmax(400px, 3fr);
+	gap: 20px 50px;
+}
+
+.StatusSummary .box {
+	padding: 20px;
+	box-shadow: 1px 1px 9px rgba(0,0,0,.2);
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.StatusSummary .content .map {
+	padding: 0;
+	grid-row: 1/3;
+}

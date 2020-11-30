@@ -1,0 +1,31 @@
+.ConsumptionOverview h1 {
+	font-size: 2.3em;
+	margin: 0 0 30px 0;
+	font-weight: normal;
+}
+
+.ConsumptionOverview h1 > div {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.ConsumptionOverview .sections {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	gap: 30px;
+}
+
+.ConsumptionOverview .sections .part h3 {
+	font-size: 1em;
+	margin-bottom: 5px;
+}
+
+.ConsumptionOverview .sections .part p {
+	font-size: 2.3em;
+	font-weight: bold;
+}
+
+.ConsumptionOverview .sections .part p.suffix {
+	font-size: .9em;
+	font-weight: bold;
+}

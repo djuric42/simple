@@ -1,0 +1,68 @@
+.HomePowerplants {
+	padding: 20px 20px 100px 20px;
+	margin-top: 60px;
+}
+
+.HomePowerplants-content {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.HomePowerplants-content h2 {
+	margin-bottom: 30px;
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+.HomePowerplants-items {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 40px;
+}
+
+.HomePowerplants-Powerplant-plant {
+	background-color: var(--color-blue-dark);
+	color: var(--color-white);
+	position: relative;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.HomePowerplants-Powerplant-image {
+	position: relative;
+}
+
+.HomePowerplants-Powerplant-image:after {
+	content: '';
+	display: block;
+	padding-top: 70%;
+}
+
+.HomePowerplants-Powerplant-image .src {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.HomePowerplants-Powerplant-content {
+	padding: 20px 20px 80px 20px;
+}
+
+.HomePowerplants-Powerplant-plant h3 {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+.HomePowerplants-Powerplant-content a.button {
+	display: inline-block;
+	padding: 10px 15px 12px 15px;
+	font-weight: bold;
+	margin-top: 20px;
+	background-color: var(--color-green);
+	border-radius: 20px;
+	position: absolute;
+	bottom: 20px;
+}

@@ -1,0 +1,46 @@
+.Welcome {
+	padding: 60px 20px 20px;
+	display: grid;
+	grid-template-columns: 150px 1fr 1fr 1fr 1fr;
+	gap: 40px;
+	background-color: #F6F6F6;
+}
+
+.Welcome .logo .inner {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #FFF;
+	box-shadow: 1px 1px 15px rgba(0,0,0,.3);
+}
+
+.Welcome p {
+	font-size: 1em;
+}
+
+.Welcome .content,
+.Welcome .stat {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.Welcome .company-title {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+
+.Welcome .stat .value {
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.Welcome .stat .value.red {
+	color: var(--color-red);
+}
+
+.Welcome .stat .value.green {
+	color: var(--color-green);
+}

@@ -1,0 +1,54 @@
+.ConsumptionDetails {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 90px;
+	margin-top: 60px;
+}
+
+.ConsumptionDetails .section h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	border-bottom: 1px solid currentColor;
+}
+
+.ConsumptionDetails-EnergyDisclosure .chart {
+	width: 100%;
+	max-width: 300px;
+	margin: 20px auto;
+	position: relative;
+}
+
+.ConsumptionDetails-EnergyDisclosure .chart:before {
+	content: '';
+	display: block;
+	padding-top: 80%;
+}
+
+.ConsumptionDetails-EnergyDisclosure .chart > div {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.ConsumptionDetails-EnergyDisclosure table.details {
+	width: 100%;
+	text-align: left;
+}
+
+.ConsumptionDetails table.details tr.seperator {
+	height: 20px;
+}
+
+.ConsumptionDetails table.details th {
+	font-weight: bold;
+}
+
+.ConsumptionDetails table.details th,
+.ConsumptionDetails table.details td {
+	padding: 5px;
+}
+
+.ConsumptionDetails-Details table.details {
+	width: 100%;
+	margin-top: 20px;
+	text-align: left;
+}

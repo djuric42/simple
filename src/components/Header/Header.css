@@ -1,0 +1,56 @@
+.Header {
+	background-color: var(--color-blue-dark);
+	height: 120px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 200;
+}
+
+.Header-logo {
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+}
+
+.Header-logo img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.Header-navigation {
+	position: absolute;
+	right: 20px;
+	bottom: 40px;
+}
+
+.Header-menu {
+	list-style: none;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.Header-menuItem {
+	flex: 0 1 auto;
+	color: var(--color-white);
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+.Header-button {
+	font-weight: bold;
+	color: var(--color-white);
+	display: block;
+	padding: 10px 20px;
+	border: 2px solid currentColor;
+	border-radius: 30px;
+}
+
+.Header-menuItem a.active {
+	color: var(--color-orange);
+}

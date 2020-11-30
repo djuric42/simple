@@ -1,0 +1,120 @@
+.Table {
+	width: 100%;
+	height: 600px;
+	padding: 0;
+	overflow-y: auto;
+}
+
+.Table table {
+	width: 100%;
+	text-align: left;
+	border-spacing: 0;
+	border-collapse: collapse;
+	min-width: 900px;
+}
+
+.Table thead th {
+	position: sticky;
+	top: 0;
+	background-color: var(--color-white);
+	font-weight: bold;
+	z-index: 3;
+	box-shadow: 0 1px 0px #000;
+}
+
+.Table table th,
+.Table table td {
+	padding: 12px 12px 12px 0;
+}
+
+.Table table th {
+	padding-bottom: 18px;
+}
+
+.Table table td.select-box,
+.Table table th.select-box {
+	width: 50px;
+	padding-left: 10px;
+}
+
+.Table table tbody tr:nth-child(odd) {
+	background-color: #fafafa;
+}
+
+a.download-button {
+	display: inline-block;
+	width: 1.3em;
+	height: 1.3em;
+	background-image: url(../../assets/svg/icon-download.svg);
+	text-indent: -9999px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.Checkbox input {
+	display: none;
+}
+
+.Checkbox span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+	margin: 0;
+	border: 2px solid var(--color-blue-dark);
+	position: relative;
+	cursor: pointer;
+}
+
+.Checkbox span:hover:after {
+	display: block;
+	position: absolute;
+	content: '';
+	width: 12px;
+	height: 12px;
+	top: 1px;
+	left: 1px;
+	background-image: url(../../assets/svg/checkbox.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: .4;
+}
+
+.Checkbox input[type=checkbox]:checked + span:after {
+	display: block;
+	position: absolute;
+	content: '';
+	width: 12px;
+	height: 12px;
+	top: 1px;
+	left: 1px;
+	background-image: url(../../assets/svg/checkbox.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.Checkbox input[type=checkbox]:checked + span:hover:after {
+	opacity: 1;
+}
+
+button.export-button {
+	appearance: none;
+	border: 0;
+	padding: 10px 20px;
+	background-color: var(--color-green);
+	color: var(--color-white);
+	font-weight: bold;
+	font-size: 1.2em;
+	border-radius: 20px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	transition: background-color .2s;
+}
+
+button.export-button:disabled {
+	cursor: not-allowed;
+	background-color: var(--color-green-light);
+}

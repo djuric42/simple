@@ -1,0 +1,10 @@
+.MyPowerplants-header h1 {
+	font-size: 2.3em;
+	margin: 0 0 30px 0;
+	font-weight: normal;
+}
+
+.MyPowerplants-header h1 > div {
+	display: inline-block;
+	margin-left: 20px;
+}

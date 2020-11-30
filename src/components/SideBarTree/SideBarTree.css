@@ -1,0 +1,143 @@
+.SideBarTree {
+	position: fixed;
+	width: 270px;
+	left: 0;
+	top: 120px;
+	bottom: 0;
+	background-color: #FFF;
+	overflow: scroll;
+}
+
+.SideBarTree .inner {
+	padding: 30px;
+}
+
+.container-sidebar {
+	margin-left: 270px;
+	padding: 50px 50px 50px 90px;
+}
+
+.SideBarTree-logo {
+	width: 150px;
+	height: 150px;
+	background-color: gray;
+	border-radius: 50%;
+	margin: 0 auto 30px auto;
+}
+
+.SideBarTree-region {
+	color: var(--color-blue-dark);
+	margin-bottom: 25px;
+	font-size: 1.2em;
+	position: relative;
+}
+
+.SideBarTree button.companyOverview {
+	appearance: none;
+	border: 0;
+	border: 0;
+	padding: 0;
+	font-size: 1.2em;
+	background: transparent;
+	color: var(--color-blue-dark);
+	margin-bottom: 20px;
+	text-align: left;
+	cursor: pointer;
+	border-bottom: 1px solid transparent;
+	font-weight: bold;
+}
+
+.SideBarTree button.companyOverview.active,
+.SideBarTree button.companyOverview:hover {
+	color: var(--color-blue-dark);
+	border-color: currentColor;
+}
+
+.SideBarTree-region button.link {
+	appearance: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	color: var(--color-blue-dark);
+	font-size: 1em;
+	cursor: pointer;
+	border-bottom: 1px solid transparent;
+	font-weight: bold;
+}
+
+.SideBarTree-region button.sublink {
+	appearance: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	color: var(--color-blue-dark);
+	font-weight: bold;
+	font-size: 1em;
+	cursor: pointer;
+	border-bottom: 1px solid transparent;
+	transition: opacity .2, border-color .2s;
+}
+
+.SideBarTree-region button.sublink:hover,
+.SideBarTree-region button.sublink.active {
+	border-color: currentColor;
+	opacity: 1;
+}
+
+.SideBarTree-region button.link:hover,
+.SideBarTree-region button.link.active {
+	border-color: currentColor;
+}
+
+.SideBarTree-region button.expand {
+	appearance: none;
+	border: 0;
+	padding: 0;
+	margin: 0 10px 0 0;
+	color: inherit;
+	border-radius: 0;
+	background: transparent;
+	font-size: 1em;
+	font-weight: bold;
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	background-image: url(../../assets/svg/arrow.svg);
+	background-size: 18px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: rgba(0,0,0,0);
+	border-radius: 50%;
+	transition: background-color .2s, transform .3s ease-out;
+}
+
+.SideBarTree-region button.expand:hover {
+	background-color: rgba(0,0,0,.1);
+}
+
+.SideBarTree-region button.expand.active {
+	transform: rotate(-180deg);
+}
+
+.SideBarTree-region .wrapper {
+	padding-top: 5px;
+	transition: height .3s ease-out;
+}
+
+.SideBarTree-region ul {
+	list-style: none;
+	margin: o;
+	padding: 0;
+	font-size: .9em;
+	padding-left: 25px;
+}
+
+.SideBarTree-region ul li {
+	padding: 8px 0;
+}
